@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>test</title>
+    <url>/2020/09/24/test/</url>
+    <content><![CDATA[<p>faaet</p>
+]]></content>
+      <categories>
+        <category>软件安装2</category>
+      </categories>
+      <tags>
+        <tag>123</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>利用hexo和github搭建个人博客</title>
     <url>/2020/09/23/%E5%88%A9%E7%94%A8hexo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1.安装Git"></a>1.安装Git</h2><h3 id="1-1下载网址"><a href="#1-1下载网址" class="headerlink" title="1.1下载网址"></a>1.1下载网址</h3><p><a href="https://git-scm.com/">https://git-scm.com/</a></p>
