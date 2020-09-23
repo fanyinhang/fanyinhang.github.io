@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-09-23T07:35:17.176Z</updated>
+  <updated>2020-09-23T08:46:33.035Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git安装</title>
+    <link href="http://example.com/2020/09/23/Git%E5%AE%89%E8%A3%85/"/>
+    <id>http://example.com/2020/09/23/Git%E5%AE%89%E8%A3%85/</id>
+    <published>2020-09-23T08:44:46.000Z</published>
+    <updated>2020-09-23T08:46:33.035Z</updated>
+    
+    <content type="html"><![CDATA[<p>test</p><p><img src="Git%E5%AE%89%E8%A3%85.assets/image-20200923164559891.png" alt="image-20200923164559891"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;test&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;Git%E5%AE%89%E8%A3%85.assets/image-20200923164559891.png&quot; alt=&quot;image-20200923164559891&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="软件安装" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
   
   <entry>
     <title>我的第二篇博客文章</title>
