@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-09-23T08:46:33.035Z</updated>
+  <updated>2020-09-23T08:56:10.803Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="http://example.com/2020/09/23/Git%E5%AE%89%E8%A3%85/"/>
     <id>http://example.com/2020/09/23/Git%E5%AE%89%E8%A3%85/</id>
     <published>2020-09-23T08:44:46.000Z</published>
-    <updated>2020-09-23T08:46:33.035Z</updated>
+    <updated>2020-09-23T08:56:10.803Z</updated>
     
-    <content type="html"><![CDATA[<p>test</p><p><img src="Git%E5%AE%89%E8%A3%85.assets/image-20200923164559891.png" alt="image-20200923164559891"></p>]]></content>
+    <content type="html"><![CDATA[<p>test</p><p><img src="/2020/09/23/Git%E5%AE%89%E8%A3%85/image-20200923164559891.png" alt="image-20200923164559891"></p><p><img src="/2020/09/23/Git%E5%AE%89%E8%A3%85/image-20200923165601098.png" alt="image-20200923165601098"></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;test&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;Git%E5%AE%89%E8%A3%85.assets/image-20200923164559891.png&quot; alt=&quot;image-20200923164559891&quot;&gt;&lt;/p&gt;
-</summary>
+&lt;p&gt;&lt;img src=&quot;/2020/09/23/Git%E5%AE%89%E8%A3%85/image-20200923164559891.png&quot; alt=&quot;image-20200923164559891&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/202</summary>
       
     
     
