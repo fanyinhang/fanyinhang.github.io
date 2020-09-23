@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-09-23T08:56:10.803Z</updated>
+  <updated>2020-09-23T09:03:00.906Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://example.com/2020/09/23/test/"/>
+    <id>http://example.com/2020/09/23/test/</id>
+    <published>2020-09-23T09:02:22.000Z</published>
+    <updated>2020-09-23T09:03:00.906Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2020/09/23/test/image-20200923170258105.png" alt="image-20200923170258105"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/09/23/test/image-20200923170258105.png&quot; alt=&quot;image-20200923170258105&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Git安装</title>
