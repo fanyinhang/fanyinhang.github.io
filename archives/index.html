@@ -1,140 +1,62 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link rel="dns-prefetch" href="http://example.com">
-  
-  <title>archives | Hexo</title>
-  <meta name="author" content="John Doe">
-  
-  
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+{% extends '_layout.swig' %}
+{% import '_macro/post-collapse.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
-  
-  <meta property="og:site_name" content="Hexo"/>
+{% block title %}{{ __('title.archive') }} | {{ config.title }}{% endblock %}
 
-  
-    <meta property="og:image" content=""/>
-  
+{% block page_class %}page-archive{% endblock %}
 
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+{% block content %}
 
-  <link rel="preload" as="style" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  {#####################}
+  {### ARCHIVE BLOCK ###}
+  {#####################}
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
-  <link href="https://unpkg.com" rel="dns-prefetch" />
-  <link href="https://busuanzi.ibruce.info" rel="dns-prefetch" />
-  <link href="https://cdn1.lncld.net" rel="dns-prefetch" />
-  
-<meta name="generator" content="Hexo 5.2.0"></head>
+      <span class="archive-page-counter">
+        {% set cheers %}
+        {% set posts_length = site.posts.length %}
+        {% if posts_length > 210 %} {% set cheers = 'excellent' %}
+          {% elif posts_length > 130 %} {% set cheers = 'great' %}
+          {% elif posts_length > 80 %} {% set cheers = 'good' %}
+          {% elif posts_length > 50 %} {% set cheers = 'nice' %}
+          {% elif posts_length > 30 %} {% set cheers = 'ok' %}
+        {% else %}
+          {% set cheers = 'um' %}
+        {% endif %}
+        {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }} {{ __('keep_on') }}
+      </span>
 
-<body>
-  <div class="container">
-    <div class="left-col" style="background-image:url('https://tva1.sinaimg.cn/large/007S8ZIlgy1ggdmi6yapmj30dw0zk0wm.jpg')">
-      <div class="intrude-less">
-        <header id="header" class="inner">
-          <a href="/">
-            <div class="profilepic"><img src='https://tva1.sinaimg.cn/large/007S8ZIlgy1ggdmr1k3k0j305k05k74j.jpg'></div>
-          </a>
-          <div class="author-name"><a href="/">John Doe</a></div>
-          
-          <nav id="main-nav">
-            <ul class="main">
-              
-              <li>
-                
-                  <a href="/archives">归档</a>
-                
-              </li>
-              
-              <li>
-                
-                  <a href="/categories">专题</a>
-                
-              </li>
-              
-              <li>
-                
-                  <a href="/friendlinks">友链</a>
-                
-              </li>
-              
-              <li>
-                
-                  <a href="/life">关于</a>
-                
-              </li>
-              
-              <li>
-                
-                  <a href="/search">搜索</a>
-                
-              </li>
-              
-            </ul>
-          </nav>
-          <nav id="sub-nav">
-            <div class="social">
-              
-              <a class="twitter" target="_blank" rel="noopener" href="https://twitter.com/" title="Twitter">Twitter</a>
-              
-              
-              
-              <a class="github" target="_blank" rel="noopener" href="https://github.com/" title="Github">Github</a>
-              
-              
-              <a class="yuque" target="_blank" rel="noopener" href="https://yuque.com/" title="语雀">语雀</a>
-              
+      {% for post in page.posts %}
 
-              
-              <a class="rss" href="/atom.xml" title="RSS">RSS</a>
-              
-            </div>
-          </nav>
-        </header>
-      </div>
-    </div>
-    <div class="mid-col">
-      <div class="mid-col-container">
-        <div id="content" class="inner">
-          <!-- 归档页 s -->
-<article>
-  <h1 class="title">已发表文章 1 篇</h1>
-  <div class="entry-content">
-    
+        {# Show year #}
+        {% set year %}
+        {% set post.year = date(post.date, 'YYYY') %}
 
-    
-      <h3>2020</h3>
-      <ul>
-        
-          
-            <li>
-              <a href="/2020/09/23/利用hexo和github搭建个人博客/">利用hexo和github搭建个人博客</a>
-              (09-23)
-            </li>
-          
-        
-      </ul>
-    
-  </div>
-</article>
+        {% if post.year !== year %}
+          {% set year = post.year %}
+          <div class="collection-title">
+            <{% if theme.seo %}h2{% else %}h1{% endif %} class="archive-year" id="archive-year-{{ year }}">{{ year }}</{% if theme.seo %}h2{% else %}h1{% endif %}>
+          </div>
+        {% endif %}
+        {# endshow #}
 
-        </div>
-        
-        
-      </div>
-      <footer id="footer" class="inner">
-        © 2020 - John Doe -
-        <span id="busuanzi_container_site_pv">PV <span id="busuanzi_value_site_pv"></span></span>
-        <p>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/thinkerchan/hexo-theme-greyshade">GreyShade</a></p>
-      </footer>
+        {{ post_template.render(post) }}
+
+      {% endfor %}
+
     </div>
   </div>
-  
-  <script async defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  
-  <script async defer src="https://s5.cnzz.com/z_stat.php?id=1276809529&web_id=1276809529"></script>
-  
-</body>
-</html>
+  {#########################}
+  {### END ARCHIVE BLOCK ###}
+  {#########################}
+
+  {% include '_partials/pagination.swig' %}
+
+{% endblock %}
+
+{% block sidebar %}
+  {{ sidebar_template.render(false) }}
+{% endblock %}
