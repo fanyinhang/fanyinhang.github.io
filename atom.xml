@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-09-23T16:21:45.833Z</updated>
+  <updated>2020-09-24T00:52:50.268Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,27 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://example.com/2020/09/24/test/"/>
-    <id>http://example.com/2020/09/24/test/</id>
-    <published>2020-09-23T16:20:01.000Z</published>
-    <updated>2020-09-23T16:21:45.833Z</updated>
+    <title>hexo安装Next主题</title>
+    <link href="http://example.com/2020/09/24/hexo%E5%AE%89%E8%A3%85Next%E4%B8%BB%E9%A2%98/"/>
+    <id>http://example.com/2020/09/24/hexo%E5%AE%89%E8%A3%85Next%E4%B8%BB%E9%A2%98/</id>
+    <published>2020-09-24T00:42:48.000Z</published>
+    <updated>2020-09-24T00:52:50.268Z</updated>
     
-    <content type="html"><![CDATA[<p>faaet</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-下载地址"><a href="#1-下载地址" class="headerlink" title="1.下载地址"></a>1.下载地址</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo<span class="literal">-theme</span><span class="literal">-next</span>.git themes/next</span><br></pre></td></tr></table></figure><h2 id="2-修改-config-yaml配置文件"><a href="#2-修改-config-yaml配置文件" class="headerlink" title="2.修改_config.yaml配置文件"></a>2.修改_config.yaml配置文件</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure><h2 id="3-重新启动"><a href="#3-重新启动" class="headerlink" title="3.重新启动"></a>3.重新启动</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean </span><br><span class="line"></span><br><span class="line"><span class="comment"># 产生静态文件并部署到github仓库中</span></span><br><span class="line">hexo g | hexo d</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果出现一下问题，这是因为Hexo5把swig渲染插件删了，需要单独安装</span></span><br><span class="line">npm install hexo<span class="literal">-renderer</span><span class="literal">-swig</span></span><br><span class="line"><span class="comment"># &#123;% extends &#x27;_layout.swig&#x27; %&#125; &#123;% import &#x27;_macro/post.swig&#x27; as post_template %&#125; &#123;% import &#x27;_macro/sidebar.swig&#x27; as sidebar_template %&#125; &#123;% block title %&#125;&#123;&#123; config.title &#125;&#125;&#123;% if  theme.index_with_subtitle and config.subtitle %&#125; - &#123;&#123;config.subtitle &#125;&#125;&#123;% endif %&#125;&#123;% endblock %&#125; &#123;% block page_class %&#125; &#123;% if is_home() %&#125;page-home&#123;% endif -%&#125; &#123;% endblock %&#125; &#123;% block content %&#125;</span></span><br><span class="line"><span class="comment"># &#123;% for post in page.posts %&#125; &#123;&#123; post_template.render(post, true) &#125;&#125; &#123;% endfor %&#125;</span></span><br><span class="line"><span class="comment"># &#123;% include &#x27;_partials/pagination.swig&#x27; %&#125; &#123;% endblock %&#125; &#123;% block sidebar %&#125; &#123;&#123; sidebar_template.render(false) &#125;&#125; &#123;% endblock %&#125;</span></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;faaet&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h2 id=&quot;1-下载地址&quot;&gt;&lt;a href=&quot;#1-下载地址&quot; class=&quot;headerlink&quot; title=&quot;1.下载地址&quot;&gt;&lt;/a&gt;1.下载地址&lt;/h2&gt;&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class</summary>
       
     
     
     
-    <category term="软件安装2" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%852/"/>
+    <category term="软件安装" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
     
     
-    <category term="123" scheme="http://example.com/tags/123/"/>
+    <category term="hexo Next" scheme="http://example.com/tags/hexo-Next/"/>
     
   </entry>
   
