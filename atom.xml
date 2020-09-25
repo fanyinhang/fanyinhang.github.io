@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-09-24T00:52:50.268Z</updated>
+  <updated>2020-09-25T08:03:39.026Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Next主题之添加用户访问量</title>
+    <link href="http://example.com/2020/09/25/Next%E4%B8%BB%E9%A2%98%E4%B9%8B%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E9%87%8F/"/>
+    <id>http://example.com/2020/09/25/Next%E4%B8%BB%E9%A2%98%E4%B9%8B%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E9%87%8F/</id>
+    <published>2020-09-25T07:45:49.000Z</published>
+    <updated>2020-09-25T08:03:39.026Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-注册LeanCloud"><a href="#1-注册LeanCloud" class="headerlink" title="1.注册LeanCloud"></a>1.注册LeanCloud</h2><p>前往<a href="https://leancloud.cn/dashboard/login.html#/signup">LeanCloud</a>进行登陆注册</p><h2 id="2-创建应用"><a href="#2-创建应用" class="headerlink" title="2.创建应用"></a>2.创建应用</h2><img src="/2020/09/25/Next%E4%B8%BB%E9%A2%98%E4%B9%8B%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E9%87%8F/image-20200925155308207.png" alt="image-20200925155308207" style="zoom:50%;"><h2 id="3-配置应用"><a href="#3-配置应用" class="headerlink" title="3.配置应用"></a>3.配置应用</h2><img src="/2020/09/25/Next%E4%B8%BB%E9%A2%98%E4%B9%8B%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E9%87%8F/image-20200925155420510.png" alt="image-20200925155420510" style="zoom:50%;"><h2 id="4-创建Class"><a href="#4-创建Class" class="headerlink" title="4. 创建Class"></a>4. 创建Class</h2><p>Class名称必须为Counter</p><img src="/2020/09/25/Next%E4%B8%BB%E9%A2%98%E4%B9%8B%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E9%87%8F/image-20200925155639780.png" alt="image-20200925155639780" style="zoom:50%;"><h2 id="5-获取key"><a href="#5-获取key" class="headerlink" title="5.获取key"></a>5.获取key</h2><p>将AppID和AppKey赋值下来</p><img src="/2020/09/25/Next%E4%B8%BB%E9%A2%98%E4%B9%8B%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E9%87%8F/image-20200925155835326.png" alt="image-20200925155835326" style="zoom:50%;"><h2 id="6-设置域名"><a href="#6-设置域名" class="headerlink" title="6.设置域名"></a>6.设置域名</h2><img src="/2020/09/25/Next%E4%B8%BB%E9%A2%98%E4%B9%8B%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E9%87%8F/image-20200925155950372.png" alt="image-20200925155950372" style="zoom:50%;"><h2 id="7-配置next主题文件"><a href="#7-配置next主题文件" class="headerlink" title="7.配置next主题文件"></a>7.配置next主题文件</h2><p>将复制的AppID和AppKey分别赋值到app_id、appkey</p><p><img src="/2020/09/25/Next%E4%B8%BB%E9%A2%98%E4%B9%8B%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E9%87%8F/image-20200925160118279.png" alt="image-20200925160118279"></p><h2 id="8-重新启动Hexo"><a href="#8-重新启动Hexo" class="headerlink" title="8.重新启动Hexo"></a>8.重新启动Hexo</h2><p><code>hexo clean | hexo g | hexo d</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;1-注册LeanCloud&quot;&gt;&lt;a href=&quot;#1-注册LeanCloud&quot; class=&quot;headerlink&quot; title=&quot;1.注册LeanCloud&quot;&gt;&lt;/a&gt;1.注册LeanCloud&lt;/h2&gt;&lt;p&gt;前往&lt;a href=&quot;https://leanclo</summary>
+      
+    
+    
+    
+    <category term="软件安装" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    
+    
+    <category term="Next" scheme="http://example.com/tags/Next/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo安装Next主题</title>
